@@ -1,0 +1,199 @@
+Day-1
+*****
+	- Angular is the "Framework"
+
+	- Angular is the "JavaScript" Framework
+
+	- Angular Released by "Google"
+
+	- Current Version of Angular is "Angular13".
+
+	- Angular used to build the "web applications" and "mobile applications"
+
+	- we will build Angular Applications with the help of "TypeScript"
+
+	- TypeScript is the Programming Language
+
+	- TypeScript released by Microsoft.
+
+	- TypeScript follows the OOPS
+			
+		Ex.
+			Inheritance
+
+			Polymorphism
+
+			Encapsulation
+		
+			Abstraction
+
+			---
+			---
+			---
+	- Superset of JavaScript also called as TypeScript.
+
+	- we will save TypeScript files to with ".ts" extension
+
+	- Browsers can't understand TypeScript
+
+	- So, as Angular Developer we must convert TypeScript to Equalent javascript.
+
+	- Conversion of TypeScript to Equalent JavaScript called as Transpilation
+
+	- "tsc" is the tool used to perform the Transpilation.
+	
+	- "tsc" stands for TypeScript Compiler.
+
+	- Visual Studio Code is Suggestable IDE to build the TypeScript and Angular Applications.
+
+	- VSCode IDE given by microsoft and open source IDE.
+
+	- TypeScript installation is Command Based Installation
+
+	- TypeScript Installation Dependening on "npm" tool
+
+	- "npm" stands for Node Packaging Manager.
+
+	- "npm" available in NodeJS.
+
+Day-2
+*****
+
+Software Installations
+
+1) download and install NodeJS
+
+	NodeJS containes following tools
+	
+		1) npm
+
+		2) node
+
+		3) npx
+	
+	npm stands for node packaging manager
+
+	npm is the tool, present in NodeJS
+
+	node is the tool, helps to execute the JavaScript
+
+	npx stands for node pckaging runner
+	
+	npx creates the environment, to build the React Applications
+
+website : https://nodejs.org/en/download/
+
+file    : node-v16.14.0-x64.msi
+
+
+2) install TypeScript
+
+		TypeScript is the command based installation
+
+		> npm install -g typescript
+	
+		where "-g" stands for global installation
+
+
+3) download and install Visual Studio Code
+
+	website : https://code.visualstudio.com/docs/?dv=win
+
+	file    : VSCodeUserSetup-x64-1.64.2.exe
+
+
+Transpilation
+*************
+	- Conversion of TypeScript to Equalent JavaScript called as Transpilation
+
+	- "tsc" is the tool, used to perform Transpilation
+
+
+Ex.
+		> tsc demo.ts
+			
+			o/p
+
+		demo.js
+
+		> node demo.js
+
+
+Day-4
+*****
+Variables
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
