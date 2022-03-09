@@ -87,15 +87,82 @@
     fun_one("Welcome_1",undefined,"Welcome_3");         //Welcome_1 Hello_2 Welcome_3
     fun_one(null,null,null);                            //null null null
 */
-function fun_one(param1, param2) {
-    if (param2 === void 0) { param2 = "Hello_2"; }
-    var param3 = [];
-    for (var _i = 2; _i < arguments.length; _i++) {
-        param3[_i - 2] = arguments[_i];
+/*
+    function fun_one(param1:any,param2:any="Hello_2",...param3:any):void{
+        console.log( param1, param2, param3 );
     }
-    console.log(param1, param2, param3);
-}
-//fun_one();                                        //Expected at least 1 arguments, but got 0.
-fun_one("Hello_1"); //Hello_1 Hello_2 []
-fun_one(undefined, undefined, undefined); //undefined Hello_2 [ undefined ]
-fun_one(null, null, null); //
+    //fun_one();                                        //Expected at least 1 arguments, but got 0.
+    fun_one("Hello_1");                                 //Hello_1 Hello_2 []
+    fun_one(undefined,undefined,undefined);             //undefined Hello_2 [ undefined ]
+    fun_one(null,null,null);                            //null null [ null ]
+*/
+//optional parameters
+//while calling the "fucntions", we will make few "parameters" are "optional"
+//"ES6"
+//we will represent optional parameters with "?"
+/*
+    function fun_one(param1?:string,param2?:string,param3?:string):void{
+        console.log(param1, param2, param3 );
+    };
+    fun_one();                                     //undefined undefined undefined
+    fun_one("Hello_1");                            //Hello_1 undefined undefined
+    fun_one("Hello_1","Hello_2","Hello_3");        //Hello_1 Hello_2 Hello_3
+    fun_one(undefined,undefined,"Hello_3");        //undefined undefined Hello_3
+    fun_one(null,null,null);                       //null null null
+*/
+/*
+    function fun_one(param1:string | number, param2:string | number = "Hello_2", param3?:string,...param4:string[]):void{
+        console.log( param1, param2, param3, param4 );
+    }
+    //fun_one();                                                                  //Expected at least 1 arguments, but got 0.
+    fun_one("Hello_1");                                                           //Hello_1 Hello_2 undefined []
+    fun_one(undefined,undefined,undefined,undefined);                             //undefined Hello_2 undefined [ undefined ]
+    fun_one(null,null,null,null);                                                 //null null null [ null ]
+*/
+//Anonymous Functions
+//The function "without" name called as "Anonymous" Function
+//Anonymous functions also called as "arrow" functions
+//Arrow Functions introduced in "ES6"
+//we will represent "Arrow" Functions with "=>"
+//Arrow Functions Behaves like "callback" functions
+/*
+    Syntax
+    ******
+    1) Function Definition
+
+    2) Function Calling
+
+
+    Function Definition
+    *******************
+    let variablename = (p1:dt,p2:dt,.....pn:dt):returntype=>{
+        business logic
+    }
+
+    Function Calling
+    ****************
+    variablename(arg1,arg2,.....arg n);
+*/
+/*
+    let fun_one = ():void=>{
+        console.log("welcome to arrow functions");
+    }
+    fun_one();              //welcome to arrow functions
+*/
+/*
+    let fun_one = (param1:string,param2:string,param3:string):void=>{
+        console.log( param1, param2, param3 );
+    }
+    fun_one("Hello_1","Hello_2","Hello_3");             //Hello_1 Hello_2 Hello_3
+    fun_one( undefined,undefined,undefined );           //undefined undefined undefined
+    fun_one(null,null,null);                            //null null null
+*/
+/*
+    let fun_one = ():any=>"Hello";
+    console.log( fun_one() );
+*/
+var my_fun = function (param1, param2) {
+    param1();
+    param2();
+};
+my_fun(function () { console.log("Success"); }, function () { console.log("Fail"); });
