@@ -126,6 +126,38 @@ Variables
 
 OOPS
 ****
+classes
++++++++
+	collection of "Variables" and "functions" called as class
+
+	"Encapsulation" of Variables and functions also called as "class"
+
+	we can create the classes with the help of "class" keyword
+
+	we can create object to the classes by using "new" keyword
+
+	we will define the constructors by using "constructor" keyword
+
+	by default constructors will execute at "booting" time
+
+	typescript supports the following modifiers
+
+	1) public
+
+	2) private
+
+	3) protected
+
+	recomended modifier for functions is "public"
+
+	recomended modifier for Variables is "private"
+
+	we will refer the Current class members with "this" keyword
+
+
+
+
+
 
 
 
