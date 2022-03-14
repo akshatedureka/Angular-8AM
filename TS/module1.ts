@@ -5,10 +5,10 @@
 // export default var_one;
 
 
-export let sub_one:string = "Angular14";
-export let sub_two:string = "NodeJS";
-export let sub_three:string = "MongoDB";
-
+let sub_one:string = "Angular14";
+let sub_two:string = "NodeJS";
+let sub_three:string = "MongoDB";
+export {sub_one,sub_two,sub_three};
 
 
 
