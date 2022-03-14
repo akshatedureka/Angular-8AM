@@ -155,6 +155,17 @@ classes
 	we will refer the Current class members with "this" keyword
 
 
+interfaces
+**********
+
+	- when ever we know the declarations, and we dont know implementations then we will choose interfaces
+
+	- we will declare the interfaces by using "interface" keyword
+
+	- implementations known by either "classes" or "json"
+
+
+
 
 
 

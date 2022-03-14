@@ -1,60 +1,120 @@
-//Typescript supports following modifiers
+//Modifiers
+//TypeScript supports the following modifiers
 //1) public
 //2) private
 //3) protected
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 //public
-//public modifier applicable to "variables", "functions" and "constructors"
-//public members we can access by using class "objects"
-//public members by default accessable to "child" classes
-//recomended modifier to "functions" is "public"
+//public modifier applicable to "variables", "functions" and "constructor"
+//public members we can access with class "objects"
+//public members by default accessable to child classes
 /*
     class class_one{
-        public var_one:string;
+        public var_one:string = "Hello_1";
         public constructor(){
-            this.var_one = "Hello_1";
+
         }
         public fun_one():string{
-            return this.var_one;
+            return "Hello_2";
         }
     };
     let obj:class_one = new class_one();
-    console.log(
-        obj.var_one,
-        obj.fun_one()
-    );
-    //Hello_1 Hello_1
+    console.log( obj.var_one, obj.fun_one() );
+    //Hello_1 Hello_2
+*/
+/*
+    class class_one{
+        public var_one:string = "Hello_1";
+        public fun_one():string{
+            return "Hello_2";
+        }
+    };
+    class class_two extends class_one{
+
+    }
+    let obj:class_two = new class_two();
+    console.log( obj.var_one, obj.fun_one() );
+    //Hello_1 Hello_2
+*/
+//private
+//private modifier applicable to "variables","functions" and "constructor"
+//we can't access private members with class "objects"
+//private members won't accessable to "child" classes
+//we can't create object to the private constructor
+/*
+    class class_one{
+        private constructor(){}
+    };
+    new class_one();
+    //Constructor of class 'class_one' is private and only accessible within the class declaration
+*/
+/*
+    class class_one{
+        private var_one:string;
+        constructor(){
+            this.var_one = "Hello_1";
+        }
+        private fun_one():string{
+            return "Hello_2";
+        }
+    }
+    let obj:class_one = new class_one();
+    console.log( obj.var_one );
+    console.log( obj.fun_one() );
+    //Property 'var_one' is private and only accessible within class 'class_one'.
+*/
+/*
+    class class_one{
+        private var_one:string = "Hello";
+    }
+    class class_two extends class_one{
+
+    };
+    let obj:class_two = new class_two();
+    obj.var_one;
+    //Property 'var_one' is private and only accessible within class 'class_one'.
+*/
+//protected
+//variables, functions and constructor
+//we can't access protected members by using class "objects"
+//by default protected members accessable to "child" classes
+/*
+    class class_one{
+        protected var_one:string = "Hello";
+        protected fun_one():string{
+            return "Hello_2";
+        }
+    };
+    let obj:class_one = new class_one();
+    obj.var_one;
+    obj.fun_one();
+    //Property 'fun_one' is protected and only accessible within class 'class_one' and its subclasses.
+*/
+/*
+    class class_one{
+        protected var_one:string = "Hello";
+    }
+    class class_two extends class_one{
+        public var_two = this.var_one;
+    }
+    let obj:class_two = new class_two();
+    console.log( obj.var_two );
+    //Hello
+*/
+/*
+    class class_one{
+        protected constructor(){}
+    }
+    new class_one();
+    //Constructor of class 'class_one' is protected and only accessible within the class declaration.
 */
 var class_one = /** @class */ (function () {
-    function class_one() {
-        this.var_one = "Hello_1";
+    function class_one(arg1, arg2, arg3) {
+        this.arg1 = arg1;
+        this.arg2 = arg2;
+        this.arg3 = arg3;
     }
-    class_one.prototype.fun_one = function () {
-        return "Hello_2";
-    };
     return class_one;
 }());
 ;
-var class_two = /** @class */ (function (_super) {
-    __extends(class_two, _super);
-    function class_two() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    return class_two;
-}(class_one));
-var obj = new class_two();
-console.log(obj.var_one, obj.fun_one());
+var obj = new class_one("Hello_1", "Hello_2", "Hello_3");
+console.log(obj.arg1, obj.arg2, obj.arg3);
