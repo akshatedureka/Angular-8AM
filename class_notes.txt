@@ -165,6 +165,29 @@ interfaces
 	- implementations known by either "classes" or "json"
 
 
+modules
+*******
+	collection of "similar" functionalities called as "module"
+
+	collection of "modules" called as "project"
+
+	"export" and "default" are the keywords, used to to "export" the modules
+
+	"import" is the keyword used to import the modules
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
