@@ -198,6 +198,224 @@ modules
 
 
 
+Directory Structure of Angular Application
+******************************************
+node_modules
+
+	- it containes libraries
+
+	- these libraries helps to execute the angular application
+
+src/app
+
+	- it is used to deploy the components,services,directives,pipes,.......
+
+
+src/app/app.component.ts 
+        app.component.html
+		app.component.css
+		app.component.spec.ts
+
+			- above files representing default component
+
+			- unit testing files have the ".spec.ts" extension
+
+
+src/app/app.module.ts
+
+	this file acting as "registration" file
+
+	this file also called as default "module" file
+
+	this file used to register the components,services,directives,pipes,......
+
+	angular Framework executes our application based on "registration" file
+
+
+src/assets
+
+	it is used to deploy the static resources
+
+	Ex.
+		images
+
+		xml files
+
+		json files
+
+		text files
+
+		---
+		---
+		---	
+
+
+environments/environment.ts
+
+	- it is used to provide the development related configurations
+
+
+environments/environment.prod.ts
+
+	- it is used to provide the production related configurations
+
+src/favicon.ico
+
+	- this file representing the default logo of angular
+
+src/index.html
+
+	- angular Framework starts the execution from index.html file
+
+	- this html file we can call main tempalte
+
+src / polyfills.ts
+
+	- in general, we will build angular applications with typescript
+
+	- but, Browsers can't understand TypeScript
+
+	- so, we must convert TypeScript to Equalent JavaScript
+
+	- polyfills.ts file acting as library
+
+	- this library helps to convert TypeScript to Equalent JavaScript
+
+
+src/main.ts
+
+	this file acting as mediator between app.module.ts and index.html file
+
+
+src/styles.css
+
+	here, we can define global styles
+
+	these styles applicable to entire angular application
+
+
+src / test.ts
+
+	this file is default testing file for main.ts file
+
+.browserslist
+
+	this file contain supporting browsers of angular13 application
+
+angular.json
+
+	this file describing the directory Structure of angular application
+
+karma.conf.js
+
+	this file acting as configuration file to write unit test cases
+
+package.json
+
+	this file describing the libraries information
+
+	this file also helps to download the 3rd party libraries
+
+
+tsconfig.app.json
+
+	this file helps to configure the application level configurations
+
+
+tsconfig.json
+
+	this file used to configure the TypeScript related information
+
+
+tsconfig.spec.json
+
+	this file used to configure the unit test cases related information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
