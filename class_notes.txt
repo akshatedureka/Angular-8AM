@@ -332,6 +332,75 @@ tsconfig.spec.json
 	this file used to configure the unit test cases related information
 
 
+components
+**********
+	reusable portion of complex ui called as component
+
+	as a angular developer, we can create more than one component
+
+	as a angular developer we can provide communication between components
+
+	angular follows the MVC Design Pattern
+
+	M - Model
+
+	V - View
+
+	C - Controller / Component
+
+	Variables behaves like model
+
+	HTML,HTML5,Python and PERL Scripting acting as View in MVC
+
+	classes behaves like Components
+
+
+**************************************
+componentEx
+          src
+		    app
+			  first.component.ts
+			  first.component.html
+
+			  app.module.ts
+			index.html
+***************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
