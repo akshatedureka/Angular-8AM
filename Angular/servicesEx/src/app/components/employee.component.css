@@ -1,0 +1,27 @@
+table,th,td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    font-family: Comic Sans MS;
+    color: white;
+}
+
+th{
+    height: 50px;
+}
+
+tr:nth-child(even){
+    background-color: gray;
+}
+
+tr:nth-child(odd){
+    background-color: aqua;
+}
+
+tr:hover{
+    background-color: burlywood;
+}

@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>SNO</th>
+        <th>NAME</th>
+        <th>COST</th>
+        <th>RATING</th>
+        <th>BRAND</th>
+        <th>IMAGE</th>
+    </tr>
+    <tr *ngFor="let product of products;let i = index">
+        <td>{{i+1}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.cost}}</td>
+        <td>{{product.rating}}</td>
+        <td>{{product.brand}}</td>
+        <td><img width="50px" src={{product.image}}></td>
+    </tr>
+</table>
