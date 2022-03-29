@@ -367,6 +367,24 @@ componentEx
 ***************************************
 
 
+communication between components
+
+we can provide communication between components in 3 ways
+
+1) @Input()
+
+		share data from parent component to child component
+
+2) @Output()
+
+		share the data from child component to parent component
+
+3) @ViewChild()
+
+4) @ViewChildren()
+
+		above two directives used to share the data between "sibiling" components
+
 
 
 
