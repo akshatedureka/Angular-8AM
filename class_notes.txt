@@ -387,6 +387,79 @@ we can provide communication between components in 3 ways
 
 
 
+Steps to implement the @ViewChild Example
+*****************************************
+1) create the Comp2 with var_one and var_two
+
+
+
+2) get the reference of "Comp2" to "Comp1"
+
+
+
+3) create the button in Comp1
+
+
+
+directives
+**********
+	directives enhances the view capabilities
+
+	we have two types of directives
+
+	1) predefined directives
+
+	2) custom directives
+
+
+	directives given by angular Framework called as predefined directives
+
+	directives developed by developer based on application requirement called as custom directives
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
