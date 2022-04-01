@@ -1,0 +1,27 @@
+<table>
+    <tr>
+        <th>SNO</th>
+        <th>P_ID</th>
+        <th>P_NAME</th>
+        <th>P_COST</th>
+    </tr>
+    <tr *ngFor="let product of arr2;let i = index">
+        <td>{{i+1}}</td>
+        <td>{{product.p_id}}</td>
+        <td>{{product.p_name}}</td>
+        <td>{{product.p_cost}}</td>
+    </tr>
+</table>
+
+
+
+
+
+<!-- <p *ngFor="let num of arr1;
+           let i = index;
+           let f = first;
+           let l = last;
+           let e = even;
+           let o = odd;">
+    {{num}}....{{i}}....{{f}}...{{l}}....{{e}}....{{o}}
+</p> -->

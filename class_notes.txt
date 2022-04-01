@@ -416,6 +416,96 @@ directives
 
 	directives developed by developer based on application requirement called as custom directives
 
+predefined directives divided into 3 types
+******************************************
+
+1) event based directives
+
+2) attribute type directives
+
+3) structural directives
+
+
+	- event based directives are used to handle the events
+
+		1) click
+
+		2) dblclick
+
+		3) submit
+
+	- we will represent event based directives with "()"
+
+	Ex.
+			(click)
+
+			(dblclick)
+
+			(ngSubmit)
+
+
+	- attribute type directives are the default directives
+
+	- we will represent attribute type directives with "[]"
+
+		[ngStyle]
+
+		[ngClass]
+
+		[ngSwitch]
+
+	- with structural directives we can manipulate the DOM.
+
+	- we will represent structural directives with "*"
+
+	Ex.
+			*ngFor
+
+			*ngIf
+
+			---
+			---
+			---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
