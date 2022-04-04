@@ -1,0 +1,15 @@
+<div>
+    <label>User Name</label>
+    <input type="text" [(ngModel)]="login_details.uname">
+</div>
+
+<div>
+    <label>User Password</label>
+    <input type="password" [(ngModel)]="login_details.upwd">
+</div>
+
+<div>
+    <button (click)="login()">Login</button>
+</div>
+
+<h1>{{status}}</h1>

@@ -1,0 +1,11 @@
+<p *ngFor="let element of arr;let even = even;let first = first;let last = last;">
+    <span *ngIf="even;else elseBlock">Even Positions....{{element}}</span>
+    <ng-template #elseBlock>
+        Odd Positions....{{element}}
+    </ng-template>
+    <br><br>
+    
+    <span *ngIf="first">First Position....{{element}}</span>
+    <br><br>
+    <span *ngIf="last">Last Position....{{element}}</span>
+</p>
