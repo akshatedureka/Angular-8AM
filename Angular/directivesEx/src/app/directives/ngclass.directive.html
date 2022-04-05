@@ -1,0 +1,12 @@
+<h1 [ngClass]="{'text-success':true}">{{var_one}}</h1>
+<h1 [ngClass]="{'text-danger':true,'bg-success':true}">{{var_one}}</h1>
+<hr>
+<p [ngClass]="{'text-primary':var_two==='Hello_2'}">{{var_two}}</p>
+<hr>
+<p *ngFor="let element of [10,20,30,40,50]" [ngClass]="{'bg-success':element===10,
+                                                        'text-primary':element === 20,
+                                                        'bg-danger':element===30,
+                                                        'bg-warning':element===40,
+                                                        'bg-info':element===50}">
+    {{element}}
+</p>

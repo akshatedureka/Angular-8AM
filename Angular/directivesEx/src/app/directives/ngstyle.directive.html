@@ -1,0 +1,11 @@
+<!--
+    [ngStyle] this directive used to apply css
+-->
+<h1 [ngStyle]="{color:'green',backgroundColor:'yellow'}">{{var_one}}</h1>
+<h1 [ngStyle]="{'color':var_two === 'ReactJS'?'green':'red',backgroundColor:var_one==='Angular14'?'yellow':'grey'}">{{var_two}}</h1>
+
+<hr>
+
+<p *ngFor="let element of arr">
+    <span [ngStyle]="{'color':myFun(element.p_id),'fontSize':myFun1(element.p_name)}">{{element | json}}</span>
+</p>
