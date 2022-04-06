@@ -1,0 +1,12 @@
+<div class="container mt-5">
+    <input type="number" [(ngModel)]="num">
+    <br><br>
+    <div [ngSwitch]="num">
+        <div *ngSwitchCase="1" [ngClass]="{'text-danger':true}">{{num}}</div>
+        <div *ngSwitchCase="2" [ngClass]="{'text-success':true}">{{num}}</div>
+        <div *ngSwitchCase="3" [ngClass]="{'text-warning':true}">{{num}}</div>
+        <div *ngSwitchCase="4" [ngClass]="{'text-info':true}">{{num}}</div>
+        <div *ngSwitchCase="5" [ngClass]="{'text-primary':true}">{{num}}</div>
+        <div *ngSwitchDefault [ngClass]="{'text-secondary':true}">{{num}}</div>
+    </div>
+</div>

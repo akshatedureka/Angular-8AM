@@ -12,6 +12,7 @@ import NgModelDirective from './directives/ngmodel.directive';
 import NgModel1Directive from './directives/ngmodel1.directive';
 import NgStyleDirective from './directives/ngstyle.directive';
 import NgSubmitDirective from './directives/ngsubmit.directive';
+import NgSwitchDirective from './directives/ngswitch.directive';
 import SelfDirective from './directives/self.directive';
 
 @NgModule({
@@ -26,13 +27,14 @@ import SelfDirective from './directives/self.directive';
     NgSubmitDirective,
     NgStyleDirective,
     NgClassDirective,
-    SelfDirective
+    SelfDirective,
+    NgSwitchDirective
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [],
-  bootstrap: [SelfDirective]
+  bootstrap: [NgSwitchDirective]
 })
 export class AppModule { }
