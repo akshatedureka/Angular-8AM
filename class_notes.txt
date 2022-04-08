@@ -468,6 +468,53 @@ predefined directives divided into 3 types
 			---
 
 
+Auth Guards
+
+
+1) CanActivate
+
+		- CanActivate is interface in angular Framework
+
+		- CanActivate, used to perform authentication while entering into main routes
+
+2) CanDeactivate
+
+		- CanDeactivate also predefined interface in angular Framework
+
+		- CanDeactivate used to perform the authentication while leaving the main routes
+
+
+3) CanActivateChild
+
+		- CanActivateChild is the predefined interface
+
+		- CanActivateChild used to perform the authentication while entering into child routes
+
+Ex.
+ auth.routes.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

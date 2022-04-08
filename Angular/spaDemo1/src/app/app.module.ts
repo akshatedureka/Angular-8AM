@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import AuthGuards from './auth.routes';
 import ChildoneComponent from './childone.component';
 import ChildthreeComponent from './childthree.component';
 import ChildtwoComponent from './childtwo.component';
@@ -24,9 +25,12 @@ import PagetwoComponent from './pagetwo.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([{path:"page_one",component:PageoneComponent,children:[{path:"child_one",component:ChildoneComponent}]},
-                          {path:"page_two",component:PagetwoComponent,children:[{path:"child_two",component:ChildtwoComponent}]},
-                          {path:"page_three",component:PagethreeComponent,children:[{path:"child_three",component:ChildthreeComponent}]}])
+    RouterModule.forRoot([{path:"page_one/:p_id/:p_name/:p_cost",component:PageoneComponent,children:[{path:"child_one",component:ChildoneComponent}],canActivate:[AuthGuards]},
+                          {path:"page_two",component:PagetwoComponent,children:[{path:"child_two",component:ChildtwoComponent}],
+                           canDeactivate:[AuthGuards]},
+                          {path:"page_three/:p_id/:p_name/:p_cost",component:PagethreeComponent,
+                           children:[{path:"child_three",component:ChildthreeComponent}],
+                          canActivateChild:[AuthGuards]}])
   ],
   providers: [],
   bootstrap: [MasterComponent]

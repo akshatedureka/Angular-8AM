@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
     selector:"pagethree",
@@ -6,8 +7,10 @@ import { Component } from "@angular/core";
 })
 class PagethreeComponent{
     var_three:any;
-    constructor(){
-        this.var_three = "Pagethree !!!";
+    constructor(private route:ActivatedRoute){
+        this.var_three = this.route.snapshot.params["p_id"]+"...."+
+                         this.route.snapshot.params["p_name"]+"...."+
+                         this.route.snapshot.params["p_cost"];
     }
 }
 export default PagethreeComponent;
