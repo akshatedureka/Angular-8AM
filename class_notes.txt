@@ -501,6 +501,60 @@ Ex.
 
 
 
+Step 1.
+	create the components
+
+	1) pageone.component.ts
+	2) pageone.component.html
+
+
+	1) master.component.ts
+	2) master.component.html
+
+
+
+Step 2.
+	create the custom module
+
+
+	customer.component.ts
+	customer.component.html
+
+	customer.service.ts
+
+	customer.module.ts
+
+
+Step 3.
+	implement the CanLoad Authentication
+
+
+	auth.service.ts
+
+Step 4.
+	implement the routing
+
+	app.module.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
