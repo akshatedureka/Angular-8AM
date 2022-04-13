@@ -538,117 +538,143 @@ Step 4.
 
 
 
+State Management
+****************
+	if application size increses, communication between components are dufficult
 
+	to simplify communication between components we have state management
 
+	we will implement state management with "NgRx" package.
 
+	we will download NgRx package with either "npm" or "yarn" tool
 
 
+	> yarn add @ngrx/store
 
 
+=> dispatch
 
+        1) payload
 
+		      type
 
+			  value
 
 
+=> Action
 
 
+=> Reducer
 
 
+=> Initial State
 
 
+=> State
 
 
+=> store
 
 
+=> selector
 
 
+=> subscribe
 
+		- sending the requests called as dispatch
 
+		- dispatch may contain payload
 
+		- application business logic called as reducer
 
+		- application default output called as initial state
 
+		- application final output called as state
 
+		- store is the place where we can accomidate, state, initial state, and reducer
 
+		- selector receives the state from store and handover to component  (subscribe)
 
+State Management
+****************
 
+1) create the angular application
 
+		> ng new ngrx-get-example
 
 
+2) switch to angular application
 
+		> cd ngrx-get-example
 
+3) download the ngrx libraries
 
+		@ngrx/store
 
+		@ngrx/effects
 
+		> yarn add @ngrx/store @ngrx/effects
 
 
+4) create the types
 
+		***************************************************
+		ngrx-get-example
+					   src
+					     app
+						   types
+						   	  customers.types.ts
+		***************************************************
 
+		finally following types are ready
 
+		1) CUSTOMERS_LIST
 
+		2) CUSTOMERS_LIST_SUCCESS
 
+		3) CUSTOMERS_LIST_FAIL
 
+5) create the Actions
 
+	******************************************************
+	ngrx-get-example
+				  src
+				    app
 
+					  model
+					  	customers.model.ts	
 
+					  actions
+					     customers.actions.ts
+	*****************************************************
 
+	finally "Customers" model is ready
 
+	finally following actions are ready
 
+			1) customersList
 
+			2) customersListSuccess
 
+			3) customersListFail
 
 
+6) create the effects
 
+		make the rest api call and handover result to actions
 
+	*******************************************************************
+	ngrx-get-example
+	               src
+				     app
+					   services
+					     customers.service.ts
 
+					   effects
+					   	  customers.effects.ts
+	*********************************************************************
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		finally "CustomersService" is ready with "getCustomers()" function
 
 
 

@@ -1,0 +1,3 @@
+export const CUSTOMERS_LIST:string = "CUSTOMERS_LIST";
+export const CUSTOMERS_LIST_SUCCESS:string = "CUSTOMERS_LIST_SUCCESS";
+export const CUSTOMERS_LIST_FAIL:string = "CUSTOMERS_LIST_FAIL";
