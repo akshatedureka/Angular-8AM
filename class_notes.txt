@@ -676,6 +676,21 @@ State Management
 
 		finally "CustomersService" is ready with "getCustomers()" function
 
+		finally "CustomersEffects" is ready with "customers$"
+
+7) handover result to reducer from actions
+
+	***********************************************************
+	ngrx-get-example
+	               src
+				     app
+					   state
+					     state.ts
+					   reducer
+					     customers.reducer.ts
+	***********************************************************
+
+
 
 
 
