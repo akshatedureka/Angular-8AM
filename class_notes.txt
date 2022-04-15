@@ -691,6 +691,47 @@ State Management
 	***********************************************************
 
 
+8) deploy reducer to store
+
+		app.module.ts
+
+		finally "customers" key ready in Store
+
+
+9) map store key to selector
+
+		*********************************************
+		ngrx-get-example
+		              src
+					    app
+						  selector
+						     customers.selector.ts
+		*********************************************
+
+		finally "customersSelector" is ready
+
+
+
+10) subscribe result in component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
