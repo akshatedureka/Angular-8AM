@@ -716,6 +716,247 @@ State Management
 
 
 
+Spring Boot Integration
+***********************
+1) execute Spring Boot Application
+
+
+2) test the rest api with Postman
+
+		http://localhost:5000/api/v1/products
+
+3) create the angular application
+
+		> ng new springbootEx
+
+
+4) switch to angular application
+
+		> cd springbootEx
+
+
+5) download the state management libraries
+
+		@ngrx/store
+
+		@ngrx/effects
+
+
+6) create the types
+
+	*************************************
+	springbootEx
+	          src
+			    app
+				  types
+					products.types.ts
+	*************************************
+
+	finally following types are ready
+
+			1) PRODUCTS_LIST
+
+			2) PRODUCTS_LIST_SUCCESS
+
+			3) PRODUCTS_LIST_FAIL
+
+
+7) create the actions
+
+	*********************************************
+	springbootEx
+	          src
+			    app
+                   model
+				     products.model.ts
+
+				   actions
+				   	products.actions.ts
+	********************************************
+
+	finally "Product" model is ready
+
+	finally following types are ready.
+
+			1) productsList
+
+			2) productsListSuccess
+
+			3) productsListFail
+
+
+8) create the effects
+
+
+	***************************************************************
+	springbootEx
+	           src
+			      app
+					 services
+					 	products.service.ts
+
+					 effects
+					 	products.effects.ts
+	***************************************************************
+
+	finally "productsService" is ready with getProducts()
+
+	finally "productsEffects" is ready
+
+
+9) create the reducer
+
+	******************************************************************
+	springbootEx
+			  src
+			    app
+				  state
+				   products.state.ts
+
+				  reducer
+				  	products.reducer.ts
+	***************************************************************** 
+
+	finally "ProductsState" is ready
+
+	finally "productsReducer" is ready
+
+
+10) deploy reducer to store 
+
+		app.module.ts
+
+		finally "products" is the key got from store 
+
+
+
+11) create the selector
+
+	***************************************************
+	springbootEx
+			  src
+			    app
+				  selector
+				     products.selector.ts
+	**************************************************
+
+	finally "productsSelector" is ready
+
+
+
+12) perform dispatch and subscribe in AppComponent
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
