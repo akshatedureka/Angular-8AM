@@ -850,6 +850,147 @@ Spring Boot Integration
 
 
 
+Post Request in State Management
+********************************
+
+1) start the server
+
+		> node server
+
+
+2) test the rest api with Postman
+
+		http://localhost:8080/login
+
+		head ===>  token : abc123
+
+		body  ===> uname = workshop & upwd = workshop123
+
+
+3) create the angular application
+
+		> ng new post-req-example
+
+
+4) switch to angular application
+
+		> cd post-req-example
+
+
+5) download the node modules
+
+		@ngrx/store
+
+		@ngrx/effects
+
+
+
+6) types / actions / effects / reducer / store / selector / component
+
+	create the types
+
+	**************************************************
+	post-req-example
+				  src
+				    app
+					  types
+					    login.types.ts
+	**************************************************
+
+		finally "LOGIN", "LOGIN_SUCCESS" and "LOGIN_FAIL" types are ready
+
+
+7) create the actions
+
+	****************************************************
+	post-req-example
+				  src
+				    app
+					  model  
+					     login.model.ts
+						 user.model.ts
+
+					  actions
+					  	 login.actions.ts
+	******************************************************
+
+	finally "Login" model is ready
+
+	finally "User" model also ready
+
+	finally following actions are ready
+
+		1) loginAction
+
+		2) loginActionSuccess
+
+		3) loginActionFail
+
+	loginAction receives the data from Component
+
+	loginActionSuccess & loginActionFail receives the data from server
+
+
+
+8) create the effects
+
+
+	*********************************************************
+	post-req-example
+				   src
+				     app
+					   services
+					   		login.service.ts
+
+					   intreceptor
+							login.intreceptor.ts
+
+						effects
+							login.effects.ts
+	***********************************************************
+
+			finally "loginService" is ready with "login_fn()"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
