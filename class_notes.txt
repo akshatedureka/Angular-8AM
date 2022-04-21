@@ -951,6 +951,87 @@ Post Request in State Management
 
 			finally "loginService" is ready with "login_fn()"
 
+			finally "tokenIntreceptor" is ready
+
+			final "LoginEffects" is ready
+
+
+9) create the reducer
+
+		**********************************
+		state
+			login.state.ts
+		
+		reducer
+			login.reducer.ts
+		**********************************
+
+		finally loginReducer is ready
+
+
+10) create the store
+
+		app.module.ts
+
+
+11) create the selector
+
+
+		******************************************
+		selector
+			login.selector.ts
+		******************************************
+
+		finally "loginSelector" is ready
+
+
+12) create the component
+
+		AppComponent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
