@@ -994,6 +994,168 @@ Post Request in State Management
 
 
 
+MiniProject
+***********
+1) test the rest api call
+
+	URL : http://workshopbackend-env.eba-zhgxczni.ap-south-1.elasticbeanstalk.com/products
+
+2) create the angular application
+
+	> ng new MiniProject
+
+3) switch to angular application
+
+	> cd MiniProject
+
+4) download libraries
+
+		@ngrx/store
+
+		@ngrx/effects
+
+	> yarn add @ngrx/effects @ngrx/store
+
+
+5) create the types
+
+	******************************************************
+	types
+		products.types.ts
+	******************************************************
+
+	finally following types are ready
+
+			1) PRODUCTS_LIST
+
+			2) PRODUCTS_LIST_SUCCESS
+
+			3) PRODUCTS_LIST_FAIL
+
+
+6) create the actions
+
+	********************************************************
+	model
+		products.model.ts
+	
+	actions
+		products.actions.ts
+	********************************************************
+
+	finally "Product" model is ready
+
+	finally following actions are ready
+
+			1) productsListAction
+
+			2) productsListActionSuccess
+
+			3) productsListActionFail
+
+7) create the effects
+
+	***********************************************************
+	services
+		products.service.ts
+
+	effects
+		products.effects.ts
+	**********************************************************
+
+		finally productsService is ready with getProducts() function
+
+		finally "productsEffects" is ready
+
+
+8) create the reducer
+
+	*************************************************************
+	reducer
+		products.reducer.ts
+	*************************************************************
+
+	finally "productsReducer" is ready
+
+
+9) create the store
+
+	app.module.ts
+
+	finally "products" key is ready
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
