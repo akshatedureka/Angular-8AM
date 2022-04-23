@@ -1085,6 +1085,27 @@ MiniProject
 	finally "products" key is ready
 
 
+10) create the selector
+
+	*******************************************
+	selector
+	    products.selector.ts
+	*******************************************
+
+	finally productsSelector is ready
+
+
+11) perform dispatch and subscription in AppComponent
+
+
+
+
+
+
+
+
+
+
 
 
 
