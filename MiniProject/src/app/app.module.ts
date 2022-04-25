@@ -5,12 +5,18 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
+import LoadingComponent from './components/loading.component';
+import MessageComponent from './components/message.component';
+import RatingComponent from './components/rating.component';
 import productsEffects from './effects/products.effects';
 import { productsReducer } from './reducer/products.reducer';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoadingComponent,
+    MessageComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

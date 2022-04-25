@@ -17,6 +17,8 @@ export class AppComponent {
     loading!:boolean;
     error!:string;
     products!:Product[];
+    danger!:string;
+    message!:string;
 
     _subscription(){
       this.store.select(productsSelector).subscribe((posRes)=>{

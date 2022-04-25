@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.alert{
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+}
+.alert-danger{
+    color: #fff;
+    background-color: #ff0000;
+    padding: 10px;
+}
+.app-rating{
+    color: #f0c040;
+    margin: 0.1rem;
+}
