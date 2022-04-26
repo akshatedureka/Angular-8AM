@@ -1,7 +1,11 @@
 <div class="app-rating">
-    <span [class]="(rating==0)?'fa fa-rating-o'?(rating>0 && rating<1)?'fa fa-rating-half-o':'fa fa-rating'"></span>
+    <span [class]="(rating == 0) ? 'fa fa-star-o' : 
+           (rating > 0 && rating < 1) ? 
+           'fa fa-star-half-o' : 
+           'fa fa-star'"></span>
     <span [class]="(rating > 1 && rating < 2) ? 'fa fa-star-half-o' : (rating >= 2) ? 'fa fa-star' : 'fa fa-star-o'"></span>
     <span [class]="(rating > 2 && rating < 3) ? 'fa fa-star-half-o' : (rating >= 3) ? 'fa fa-star' : 'fa fa-star-o'"></span>
     <span [class]="(rating > 3 && rating < 4) ? 'fa fa-star-half-o' : (rating >= 4) ? 'fa fa-star' : 'fa fa-star-o'"></span>
     <span [class]="(rating > 4 && rating < 5) ? 'fa fa-star-half-o' : (rating >= 5) ? 'fa fa-star' : 'fa fa-star-o'"></span>
+    
 </div>

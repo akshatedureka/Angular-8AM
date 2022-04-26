@@ -1,14 +1,14 @@
-<div *ngIf="!loading;else messageBlock">
+<div *ngIf="!loading;else elseBlock">
     <loading-component></loading-component>
 </div>
 
-<ng-template #messageBlock>
-    <div *ngIf="error=='Network Error';else productsBlock">
-        <message-component [variant]="danger" [message]={{error}}></message-component>
+<ng-template #elseBlock>
+    <div *ngIf="error == 'Network Fail';else productsBlock">
+        <message-component [variant]="danger" [message]="error"></message-component>
     </div>
 </ng-template>
 
 
 <ng-template #productsBlock>
-    {{products | json}}
+     <products [products]="products"></products>
 </ng-template>

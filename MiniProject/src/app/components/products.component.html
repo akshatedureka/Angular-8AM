@@ -1,0 +1,33 @@
+<div class="grid-container">
+    <header class="grid-header">
+        <div class="logo">
+            MiniProject
+        </div>
+
+        <div>
+            <i class="fa fa-shopping-cart"></i>
+            <i class="fa fa-user-circle-o"></i>
+            <i class="fa fa-sign-out"></i>
+        </div>
+    </header>
+
+    <main>
+         <div class="row">
+             <div *ngFor="let product of products">
+                 <div class="card">
+                     <img src={{product.image}} class="gal-image">
+                     <div class="card-body">
+                         <h2>{{product.name}}</h2>
+                         <rating-component [rating]="product.rating"></rating-component>
+                         <p>Price {{product.cost}}</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </main>
+
+    <footer class="footer-class">
+        copyright@miniproject.in
+    </footer>
+</div>
+

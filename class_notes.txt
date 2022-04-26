@@ -1099,6 +1099,76 @@ MiniProject
 
 
 
+AWS Deployment
+**************
+
+1) install aws cli tool
+
+	aws cli tool, helps to deploy angular application to aws server
+
+	website : https://aws.amazon.com/cli/
+
+	file    : AWSCLIV2.msi
+
+
+2) create production build
+
+	> ng build
+
+	if build success, automatically "dist" folder will create
+
+
+3) push dist folder to s3 bucket
+
+
+
+4) create the keys to our application
+
+		IAM
+
+5) modify package.json
+
+	"aws-deploy":"aws s3 sync dist/MiniProject/ s3://mini-angular"
+
+
+6) execute the following commands
+
+		> aws configure
+
+		> ng build && npm run aws-deploy
+
+
+7) copy production url from static website hosting
+
+		URL : http://mini-angular.s3-website.ap-south-1.amazonaws.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

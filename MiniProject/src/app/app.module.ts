@@ -7,6 +7,7 @@ import { StoreModule } from '@ngrx/store';
 import { AppComponent } from './app.component';
 import LoadingComponent from './components/loading.component';
 import MessageComponent from './components/message.component';
+import ProductsComponent from './components/products.component';
 import RatingComponent from './components/rating.component';
 import productsEffects from './effects/products.effects';
 import { productsReducer } from './reducer/products.reducer';
@@ -16,7 +17,8 @@ import { productsReducer } from './reducer/products.reducer';
     AppComponent,
     LoadingComponent,
     MessageComponent,
-    RatingComponent
+    RatingComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

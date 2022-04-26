@@ -11,3 +11,77 @@
     color: #f0c040;
     margin: 0.1rem;
 }
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.grid-container{
+    display: grid;
+    height: 100%;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+}
+header{
+    grid-area: "header";
+    
+    background-color: #203040;  
+    color: white; 
+}
+main{
+    grid-area: "main";
+}
+footer{
+    grid-area: "footer";
+    
+    background-color: #203040;
+    color: white;
+}
+.grid-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 3rem;
+}
+i{
+    font-size: 50px;
+    margin-right: 20px;
+}
+.logo:hover,i:hover{
+    color: #f0c040;
+}
+.footer-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    border: 0.1rem solid #c0c0c0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: azure;
+    margin: 1rem;
+}
+.gal-image{
+    width: 18rem;
+
+}
+
+
+
+
+
+
+
+
