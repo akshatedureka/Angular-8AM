@@ -4,12 +4,14 @@ RxJS
 
     - RxJS Package, used to make Asynchronous calls.
 
+    - we will make Asynchronous calls with Observables
 
-Topics
-******
-        1) Operators
+    - Observables are present in RxJS Package
 
-        2) Subject & Behaviour Subject
+    - Observables are lazy loading
 
-        3) Observables
+    - we must subscribe Observables, then only network calls will happen
+
+
+
 
