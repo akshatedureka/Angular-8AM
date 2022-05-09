@@ -13,5 +13,13 @@ RxJS
     - we must subscribe Observables, then only network calls will happen
 
 
+1) map()
+
+2) mapTo()
+
+3) take()
+
+4) skip()
+
 
 
