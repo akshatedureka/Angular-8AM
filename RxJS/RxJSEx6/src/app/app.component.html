@@ -1,0 +1,11 @@
+<select (change)="fwChange($event)">
+    <option *ngFor="let x of fwArrays" [value]="x">{{x}}</option>
+</select>
+
+
+<br><br>
+
+
+<select (change)="backendChange($event)">
+  <option *ngFor="let x of backendArray" [value]="x">{{x}}</option>
+</select>
