@@ -1145,6 +1145,22 @@ AWS Deployment
 
 
 
+Forms
+*****
+	Angular Supports two types of Forms
+
+	1) Template Driven Forms
+
+	2) Model Driven Forms / Reactive Forms
+
+	Template Driven Forms mainly depending on View
+
+	Model Driven Forms mainly Dependening on Model
+
+
+
+
+
 
 
 

@@ -1,0 +1,75 @@
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-md-12">
+          <form #registrationForm="ngForm" (ngSubmit)="formData(registrationForm.value)">
+
+              <!-- First Name-->
+              <div class="form-group mb-3">
+                    <label class="col-md-5">First Name</label>
+                    <input class="form-control" type="text" name="fname" placeholder="Enter First Name" ngModel>
+              </div>
+
+               <!-- Last Name-->
+               <div class="form-group mb-3">
+                  <label>Last Name</label>
+                  <input class="form-control" type="text" name="lname" placeholder="Enter Last Name" ngModel>
+               </div>
+
+               <!-- Email-->
+               <div class="form-group mb-3">
+                  <label>Email</label>
+                  <input type="email" class="form-control" name="email" placeholder="Enter Email Addresss" ngModel>
+              </div>
+
+
+              <!-- Gender -->
+              <label>Gender</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="gender" value="male" ngModel>
+                <label class="form-check-label">Male</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="gender" value="female" ngModel>
+                <label class="form-check-label">Female</label>
+              </div>
+
+
+              <!-- Skills -->
+              <label>Skills</label>
+              <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="skills" value="Angular14" ngModel>
+                  <label class="form-check-label">Angular14</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="skills" value="ReactJS" ngModel>
+                <label class="form-check-label">ReactJS</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="skills" value="VueJS" ngModel>
+                <label class="form-check-label">VueJS</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="skills" value="MongoDB" ngModel>
+                <label class="form-check-label">MongoDB</label>
+              </div>
+
+
+              <!-- dropdown-->
+              <div class="form-group">
+                  <label>Country</label>
+                  <select name="country" ngModel class="form-control">
+                     <option value="india">India</option>
+                     <option value="usa">USA</option>
+                     <option value="canada">Canada</option>
+                  </select>
+              </div>
+
+
+              <!-- Submit Button-->
+              <div class="form-group">
+                  <input type="submit" class="btn btn-success btn-sm">
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
